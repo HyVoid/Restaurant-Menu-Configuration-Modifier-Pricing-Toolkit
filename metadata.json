@@ -1,0 +1,6 @@
+{
+  "name": "Restaurant Menu Master Workbook",
+  "description": "A fully relational, offline-first operational analysis and pricing master workbook for restaurant menu customization, complete with an interactive order pricing simulator, automated rule lookup, data integrity health checks, and POS CSV flat exporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
