@@ -21,37 +21,48 @@ export default function Page() {
   // Sync isClient flag on mount to avoid hydration warnings
   useEffect(() => {
     setIsClient(true);
-    const local = localStorage.getItem("restaurant_menu_master_state");
-    if (local) {
-      try {
-        const parsed = JSON.parse(local);
-        if (parsed && typeof parsed === "object") {
-          const mergedState: WorkbookState = {
-            sysParams: {
-              ...defaultWorkbookState.sysParams,
-              ...(parsed.sysParams || {})
-            },
-            categories: Array.isArray(parsed.categories) ? parsed.categories : defaultWorkbookState.categories,
-            subcategories: Array.isArray(parsed.subcategories) ? parsed.subcategories : defaultWorkbookState.subcategories,
-            items: Array.isArray(parsed.items) ? parsed.items : defaultWorkbookState.items,
-            sizes: Array.isArray(parsed.sizes) ? parsed.sizes : defaultWorkbookState.sizes,
-            modifierGroups: Array.isArray(parsed.modifierGroups) ? parsed.modifierGroups : defaultWorkbookState.modifierGroups,
-            modifiers: Array.isArray(parsed.modifiers) ? parsed.modifiers : defaultWorkbookState.modifiers,
-            defaultModifiers: Array.isArray(parsed.defaultModifiers) ? parsed.defaultModifiers : defaultWorkbookState.defaultModifiers,
-            groupAssignment: Array.isArray(parsed.groupAssignment) ? parsed.groupAssignment : defaultWorkbookState.groupAssignment,
-            selectionRules: Array.isArray(parsed.selectionRules) ? parsed.selectionRules : defaultWorkbookState.selectionRules,
-            orderSessions: Array.isArray(parsed.orderSessions) ? parsed.orderSessions : defaultWorkbookState.orderSessions,
-          };
-          setState(mergedState);
+    try {
+      const local = localStorage.getItem("restaurant_menu_master_state");
+      if (local) {
+        try {
+          const parsed = JSON.parse(local);
+          if (parsed && typeof parsed === "object") {
+            const mergedState: WorkbookState = {
+              sysParams: {
+                ...defaultWorkbookState.sysParams,
+                ...(parsed.sysParams || {})
+              },
+              categories: Array.isArray(parsed.categories) ? parsed.categories : defaultWorkbookState.categories,
+              subcategories: Array.isArray(parsed.subcategories) ? parsed.subcategories : defaultWorkbookState.subcategories,
+              items: Array.isArray(parsed.items) ? parsed.items : defaultWorkbookState.items,
+              sizes: Array.isArray(parsed.sizes) ? parsed.sizes : defaultWorkbookState.sizes,
+              modifierGroups: Array.isArray(parsed.modifierGroups) ? parsed.modifierGroups : defaultWorkbookState.modifierGroups,
+              modifiers: Array.isArray(parsed.modifiers) ? parsed.modifiers : defaultWorkbookState.modifiers,
+              defaultModifiers: Array.isArray(parsed.defaultModifiers) ? parsed.defaultModifiers : defaultWorkbookState.defaultModifiers,
+              groupAssignment: Array.isArray(parsed.groupAssignment) ? parsed.groupAssignment : defaultWorkbookState.groupAssignment,
+              selectionRules: Array.isArray(parsed.selectionRules) ? parsed.selectionRules : defaultWorkbookState.selectionRules,
+              orderSessions: Array.isArray(parsed.orderSessions) ? parsed.orderSessions : defaultWorkbookState.orderSessions,
+            };
+            setState(mergedState);
+          }
+        } catch (e) {
+          console.error("Failed to parse localized spreadsheet state, booting from seeds.", e);
         }
-      } catch (e) {
-        console.error("Failed to parse localized spreadsheet state, booting from seeds.", e);
       }
+    } catch (e) {
+      console.warn("localStorage is not accessible in this environment:", e);
     }
-    const savedTime = localStorage.getItem("restaurant_menu_master_last_saved");
-    if (savedTime) {
-      setLastSaved(savedTime);
-    } else {
+
+    try {
+      const savedTime = localStorage.getItem("restaurant_menu_master_last_saved");
+      if (savedTime) {
+        setLastSaved(savedTime);
+      } else {
+        const now = new Date().toLocaleTimeString();
+        setLastSaved(now);
+      }
+    } catch (e) {
+      console.warn("localStorage is not accessible for saved time:", e);
       const now = new Date().toLocaleTimeString();
       setLastSaved(now);
     }
@@ -60,10 +71,14 @@ export default function Page() {
   // Sync to localStorage on state changes
   useEffect(() => {
     if (!isClient) return;
-    localStorage.setItem("restaurant_menu_master_state", JSON.stringify(state));
-    const nowStr = new Date().toLocaleTimeString();
-    localStorage.setItem("restaurant_menu_master_last_saved", nowStr);
-    setLastSaved(nowStr);
+    try {
+      localStorage.setItem("restaurant_menu_master_state", JSON.stringify(state));
+      const nowStr = new Date().toLocaleTimeString();
+      localStorage.setItem("restaurant_menu_master_last_saved", nowStr);
+      setLastSaved(nowStr);
+    } catch (e) {
+      console.warn("localStorage is not writeable in this environment:", e);
+    }
   }, [state, isClient]);
 
   // Core Pricing Surcharge Rules Matrix Engine (Auto-derived Cartesian product, Section V.7)
