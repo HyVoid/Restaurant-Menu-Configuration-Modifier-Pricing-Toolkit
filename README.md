@@ -1,5 +1,3 @@
-# English | 中文
-
 # Restaurant Menu Master Workbook
 ### Excel Decision-Support Toolkit for Restaurant Menu Configuration, Modifier Pricing & POS Menu Governance
 
