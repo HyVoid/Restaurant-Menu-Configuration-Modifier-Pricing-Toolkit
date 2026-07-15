@@ -2,6 +2,11 @@ import type {NextConfig} from 'next';
 
 const isStaticExport = process.env.STATIC_EXPORT === 'true';
 
+// Extract the repository name from GITHUB_REPOSITORY (e.g., "owner/repo-name")
+const githubRepo = process.env.GITHUB_REPOSITORY;
+const repoName = githubRepo ? githubRepo.split('/')[1] : undefined;
+const basePath = isStaticExport && repoName ? `/${repoName}` : undefined;
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   eslint: {
@@ -12,7 +17,7 @@ const nextConfig: NextConfig = {
   },
   // Conditional static export settings
   output: isStaticExport ? 'export' : 'standalone',
-  assetPrefix: isStaticExport ? './' : undefined,
+  basePath: basePath,
   images: isStaticExport ? {
     unoptimized: true
   } : {
