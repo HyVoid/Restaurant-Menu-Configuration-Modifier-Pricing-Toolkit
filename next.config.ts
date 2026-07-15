@@ -5,9 +5,15 @@ const isStaticExport = process.env.STATIC_EXPORT === 'true';
 // Extract the repository name from GITHUB_REPOSITORY (e.g., "owner/repo-name")
 const githubRepo = process.env.GITHUB_REPOSITORY;
 const repoName = githubRepo ? githubRepo.split('/')[1] : undefined;
-const basePath = isStaticExport && repoName ? `/${repoName}` : undefined;
+const isGitHubIO = repoName && repoName.toLowerCase().endsWith('.github.io');
+
+// Support custom domains by checking if BASE_PATH is explicitly set, otherwise auto-detect for gh-pages
+const basePath = process.env.BASE_PATH !== undefined
+  ? process.env.BASE_PATH
+  : (isStaticExport && repoName && !isGitHubIO ? `/${repoName}` : undefined);
 
 const nextConfig: NextConfig = {
+  trailingSlash: isStaticExport ? true : undefined,
   reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
