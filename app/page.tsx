@@ -24,9 +24,28 @@ export default function Page() {
     const local = localStorage.getItem("restaurant_menu_master_state");
     if (local) {
       try {
-        setState(JSON.parse(local));
+        const parsed = JSON.parse(local);
+        if (parsed && typeof parsed === "object") {
+          const mergedState: WorkbookState = {
+            sysParams: {
+              ...defaultWorkbookState.sysParams,
+              ...(parsed.sysParams || {})
+            },
+            categories: Array.isArray(parsed.categories) ? parsed.categories : defaultWorkbookState.categories,
+            subcategories: Array.isArray(parsed.subcategories) ? parsed.subcategories : defaultWorkbookState.subcategories,
+            items: Array.isArray(parsed.items) ? parsed.items : defaultWorkbookState.items,
+            sizes: Array.isArray(parsed.sizes) ? parsed.sizes : defaultWorkbookState.sizes,
+            modifierGroups: Array.isArray(parsed.modifierGroups) ? parsed.modifierGroups : defaultWorkbookState.modifierGroups,
+            modifiers: Array.isArray(parsed.modifiers) ? parsed.modifiers : defaultWorkbookState.modifiers,
+            defaultModifiers: Array.isArray(parsed.defaultModifiers) ? parsed.defaultModifiers : defaultWorkbookState.defaultModifiers,
+            groupAssignment: Array.isArray(parsed.groupAssignment) ? parsed.groupAssignment : defaultWorkbookState.groupAssignment,
+            selectionRules: Array.isArray(parsed.selectionRules) ? parsed.selectionRules : defaultWorkbookState.selectionRules,
+            orderSessions: Array.isArray(parsed.orderSessions) ? parsed.orderSessions : defaultWorkbookState.orderSessions,
+          };
+          setState(mergedState);
+        }
       } catch (e) {
-        console.error("Failed to parse localized spreadsheet state, booting from seeds.");
+        console.error("Failed to parse localized spreadsheet state, booting from seeds.", e);
       }
     }
     const savedTime = localStorage.getItem("restaurant_menu_master_last_saved");

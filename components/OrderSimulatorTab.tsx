@@ -35,11 +35,11 @@ export default function OrderSimulatorTab({
 
   // Active Session being simulated in the workspace
   const [activeSessionId, setActiveSessionId] = useState<string>(
-    state.orderSessions.length > 0 ? state.orderSessions[0].Session_ID : ""
+    (state.orderSessions && state.orderSessions.length > 0) ? state.orderSessions[0].Session_ID : ""
   );
 
   const activeSession = useMemo(() => {
-    return state.orderSessions.find(s => s.Session_ID === activeSessionId) || null;
+    return (state.orderSessions || []).find(s => s.Session_ID === activeSessionId) || null;
   }, [state.orderSessions, activeSessionId]);
 
   // Form states for adding a new simulated session
@@ -94,7 +94,7 @@ export default function OrderSimulatorTab({
 
   // Sync activeSessionId when sessions list loads dynamically
   React.useEffect(() => {
-    if (state.orderSessions.length > 0 && !activeSessionId) {
+    if (state.orderSessions && state.orderSessions.length > 0 && !activeSessionId) {
       setActiveSessionId(state.orderSessions[0].Session_ID);
     }
   }, [state.orderSessions, activeSessionId]);
