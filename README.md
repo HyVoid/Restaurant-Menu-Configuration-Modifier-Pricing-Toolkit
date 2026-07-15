@@ -1,4 +1,5 @@
-# Restaurant Menu Master Workbook
+# Restaurant-Menu-Configuration-Modifier-Pricing-Toolkit
+
 ### Excel Decision-Support Toolkit for Restaurant Menu Configuration, Modifier Pricing & POS Menu Governance
 
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
