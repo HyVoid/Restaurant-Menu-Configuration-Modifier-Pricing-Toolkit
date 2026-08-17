@@ -10,9 +10,7 @@
 
 > ## **No signup. No installation. Free.**
 >
-> 🌐 **Open in Browser**
->
-> Browser Version (HTML Live Demo)
+> 🌐 **Open in Browser** → [Browser Version (HTML Live Demo)](https://hyvoid.github.io/Restaurant-Menu-Configuration-Modifier-Pricing-Toolkit/)
 >
 > 📥 **Download Excel**
 >
