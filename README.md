@@ -18,24 +18,6 @@
 
 ---
 
-# Screenshots
-
-### Browser Version
-
-<!-- screenshot: browser version -->
-
-*Interactive browser interface for maintaining menu structure, modifier relationships, pricing rules, and order validation.*
-
----
-
-### Excel Version
-
-<!-- screenshot: excel version -->
-
-*Excel workbook containing the complete menu master database, pricing engine, validation logic, and POS export tables.*
-
----
-
 # What It Helps You Track
 
 - Complete menu hierarchy across categories, products, sizes, and modifier groups from one consistent source.
