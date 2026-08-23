@@ -8,7 +8,9 @@
 
 **Build and maintain a single source of truth for restaurant menus, modifier pricing, and POS configuration—directly in a browser or Excel workbook, with no installation, no signup, and no manual pricing calculations.**
 
-> ## **No signup. No installation. Free.**
+**No signup. No installation. Free in your browser.**
+
+Try the browser version for free. If you need the Excel version, you can buy it with a 7-day money-back guarantee.
 >
 > 🌐 **Open in Browser** → [Browser Version (HTML Live Demo)](https://hyvoid.github.io/Restaurant-Menu-Configuration-Modifier-Pricing-Toolkit/)
 >
