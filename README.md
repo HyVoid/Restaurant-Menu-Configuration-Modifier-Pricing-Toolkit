@@ -16,7 +16,7 @@ Try the browser version for free. If you need the Excel version, you can buy it 
 >
 > 📥 **Download Excel**
 >
-> Excel Workbook (Latest Release / Gumroad)
+> Excel Workbook (Latest Release / [Website](https://www.theseusworkshop.com/))
 
 ---
 
