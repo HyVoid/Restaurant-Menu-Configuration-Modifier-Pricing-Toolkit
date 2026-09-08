@@ -488,7 +488,6 @@ The workbook intentionally validates relationships before calculations wherever 
 
 </details>
 
-</details>
 
 ---
 
