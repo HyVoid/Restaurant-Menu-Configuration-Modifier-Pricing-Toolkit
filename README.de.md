@@ -1,8 +1,8 @@
-[ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
+[ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
 # Restaurant-Menu-Configuration-Modifier-Pricing-Toolkit
 
-### Excel Decision-Support Toolkit for Restaurant Menu Configuration, Modifier Pricing & POS Menu Governance
+## Excel Decision-Support Toolkit for Restaurant Menu Configuration, Modifier Pricing & POS Menu Governance
 
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-success)
@@ -22,7 +22,7 @@ Testen Sie die Browser-Version kostenlos. Wenn Sie die Excel-Version benötigen,
 
 ---
 
-# Was Sie damit nachverfolgen können
+## Was Sie damit nachverfolgen können
 
 - Die vollständige Menühierarchie über Kategorien, Produkte, Größen und Modifier-Gruppen hinweg aus einer konsistenten Quelle.
 - Grundpreise, Modifier-Preise, Halb-Halb-Preislogik und Aufpreise für Zusatzportionen – ohne widersprüchliche Preistabellen.
@@ -33,7 +33,7 @@ Testen Sie die Browser-Version kostenlos. Wenn Sie die Excel-Version benötigen,
 
 ---
 
-# Schnellstart-Workflow
+## Schnellstart-Workflow
 
 1. **Preisparameter des Restaurants einmalig festlegen**
 
@@ -55,7 +55,7 @@ Testen Sie die Browser-Version kostenlos. Wenn Sie die Excel-Version benötigen,
 
 ---
 
-# Warum ich das gebaut habe
+## Warum ich das gebaut habe
 
 Das Management einer Restaurantspeisekarte wirkt einfach – bis die Speisekarte mehr als eine Handvoll Produkte umfasst.
 
@@ -73,7 +73,7 @@ Das Ergebnis ist nicht einfach schnellere Wartung – es ist ein wiederholbares 
 
 ---
 
-# Häufige Probleme bei Restaurantspeisekarten, die dieses Tool löst
+## Häufige Probleme bei Restaurantspeisekarten, die dieses Tool löst
 
 | Problem | Ohne dieses Tool | Mit diesem Tool |
 |----------|------------------|----------------|
@@ -86,7 +86,7 @@ Das Ergebnis ist nicht einfach schnellere Wartung – es ist ein wiederholbares 
 
 ---
 
-# Für wen ist das gedacht
+## Für wen ist das gedacht
 
 Diese Arbeitsmappe richtet sich an Restaurantinhaber, Speisekartenmanager, Franchisenehmer, POS-Implementierungsberater, Hospitality-Analysten und Betriebsteams, die komplexe Restaurantspeisekarten mit konfigurierbaren Produkten und Modifier-Preisen pflegen.
 
@@ -98,7 +98,7 @@ Excel-Kenntnisse sind nicht erforderlich. Öffnen Sie die Browser-Version für s
 
 ---
 
-# Über mich
+## Über mich
 
 Ich entwickle leichtgewichtige Excel- und browserbasierte Entscheidungsunterstützungstools für operative Probleme, die schwierig werden, wenn zu viele bewegliche Teile gleichzeitig verwaltet werden müssen.
 
