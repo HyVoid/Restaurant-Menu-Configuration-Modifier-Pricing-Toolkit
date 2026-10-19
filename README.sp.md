@@ -1,8 +1,8 @@
-[ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
+[ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
 # Restaurant-Menu-Configuration-Modifier-Pricing-Toolkit
 
-### Excel Decision-Support Toolkit for Restaurant Menu Configuration, Modifier Pricing & POS Menu Governance
+## Excel Decision-Support Toolkit for Restaurant Menu Configuration, Modifier Pricing & POS Menu Governance
 
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-success)
@@ -22,7 +22,7 @@ Prueba gratis la versión en navegador. Si necesitas la versión de Excel, puede
 
 ---
 
-# Qué te ayuda a controlar
+## Qué te ayuda a controlar
 
 - La jerarquía completa de la carta, desde categorías, productos, tamaños y grupos de modificadores, a partir de una única fuente coherente.
 - Precios base, precios de modificadores, precios de mitad y mitad y cargos por porción adicional, sin tablas de precios contradictorias.
@@ -33,7 +33,7 @@ Prueba gratis la versión en navegador. Si necesitas la versión de Excel, puede
 
 ---
 
-# Flujo de inicio rápido
+## Flujo de inicio rápido
 
 1. **Configura una sola vez los parámetros de precios del restaurante**
 
@@ -55,7 +55,7 @@ Prueba gratis la versión en navegador. Si necesitas la versión de Excel, puede
 
 ---
 
-# Por qué construí esto
+## Por qué construí esto
 
 La gestión de la carta de un restaurante parece sencilla hasta que la carta crece más allá de un puñado de productos.
 
@@ -73,7 +73,7 @@ El resultado no es simplemente un mantenimiento más rápido: es un sistema de a
 
 ---
 
-# Problemas comunes de cartas de restaurantes que esto resuelve
+## Problemas comunes de cartas de restaurantes que esto resuelve
 
 | Problema | Sin esta herramienta | Con esta herramienta |
 |----------|------------------|----------------|
@@ -86,7 +86,7 @@ El resultado no es simplemente un mantenimiento más rápido: es un sistema de a
 
 ---
 
-# A quién va dirigido
+## A quién va dirigido
 
 Este libro está diseñado para propietarios de restaurantes, administradores de cartas, operadores de franquicias, consultores de implementación de TPV, analistas de hostelería y equipos de operaciones responsables de mantener cartas de restaurantes complejas con productos configurables y precios de modificadores.
 
@@ -98,7 +98,7 @@ No se requiere experiencia en hojas de cálculo. Abre la versión en navegador p
 
 ---
 
-# Sobre mí
+## Sobre mí
 
 Construyo herramientas ligeras de apoyo a la decisión basadas en Excel y en el navegador para problemas operativos que se vuelven difíciles cuando hay que gestionar demasiadas piezas móviles a la vez.
 
