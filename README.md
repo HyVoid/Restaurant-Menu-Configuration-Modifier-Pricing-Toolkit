@@ -1,7 +1,7 @@
-[ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
+[ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
 # Restaurant-Menu-Configuration-Modifier-Pricing-Toolkit
-### Excel Decision-Support Toolkit for Restaurant Menu Configuration, Modifier Pricing & POS Menu Governance
+## Excel Decision-Support Toolkit for Restaurant Menu Configuration, Modifier Pricing & POS Menu Governance
 
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-success)
@@ -21,7 +21,7 @@ Try the browser version for free. If you need the Excel version, you can buy it 
 
 ---
 
-# What It Helps You Track
+## What It Helps You Track
 
 - Complete menu hierarchy across categories, products, sizes, and modifier groups from one consistent source.
 - Base prices, modifier prices, half-and-half pricing, and extra portion charges without conflicting pricing tables.
@@ -32,7 +32,7 @@ Try the browser version for free. If you need the Excel version, you can buy it 
 
 ---
 
-# Quick Start Workflow
+## Quick Start Workflow
 
 1. **Configure restaurant pricing parameters once**
 
@@ -54,7 +54,7 @@ Try the browser version for free. If you need the Excel version, you can buy it 
 
 ---
 
-# Why I Built This
+## Why I Built This
 
 Restaurant menu management appears straightforward until the menu grows beyond a handful of products.
 
@@ -72,7 +72,7 @@ The result is not simply faster maintenance—it is a repeatable decision-suppor
 
 ---
 
-# Common Restaurant Menu Problems This Solves
+## Common Restaurant Menu Problems This Solves
 
 | Problem | Without This Tool | With This Tool |
 |----------|------------------|----------------|
@@ -85,7 +85,7 @@ The result is not simply faster maintenance—it is a repeatable decision-suppor
 
 ---
 
-# Who This Is For
+## Who This Is For
 
 This workbook is designed for restaurant owners, menu administrators, franchise operators, POS implementation consultants, hospitality analysts, and operations teams responsible for maintaining complex restaurant menus with configurable products and modifier pricing.
 
@@ -97,7 +97,7 @@ No spreadsheet expertise is required. Open the browser version for quick access 
 
 ---
 
-# About
+## About
 
 I build lightweight Excel and browser-based decision-support tools for operational problems that become difficult once too many moving parts must be managed simultaneously.
 
